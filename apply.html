@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+
+    
+    <link = rel="stylesheet" href="style.css">
+
+    
+    <style>
+    	 {
+    		margin: 0;
+    		padding: 0;
+    	}
+		body {
+			font: 87.5% Arial, Helvetica, sans-serif;
+			width: 900px;
+		    margin: 10px auto;
+		    padding: 10px;
+		    border: 2px solid blue;
+		}
+		h1 {
+			color: orangered; 
+			font-size: 140%;
+		}
+		h2 {
+			font-size: 115%;
+			padding: .5em 0;
+		}
+		label {
+			color: blue;
+			float: left;
+			width: 8em;
+			font-weight: bold;
+			text-align: left;
+		}
+		input {
+			width: 15em;
+			margin: 0 0 .5em 1em;
+		}
+		#button, #reset {
+			width: 7em;
+			background-color: silver;
+			box-shadow: 2px 2px 0 blue; }
+		#button {
+			margin-left: 9em;
+		}
+	</style>
+    
+    </head>
+
+    
+    
+
+<body>
+ <header>
+     <title>AUM |Computer Science</title>
+    <!--logo-->  
+     <img class="logo" src="aumlogo.jpg" height="200" width "200"style= vertical-align:left;>
+
+<nav>
+ <ul class = "nav_links">
+<li><a href="index.html">Home</a></li>
+<li><a href="description.html">Description</a></li>
+<li><a href="apply.html">Apply</a></li>     
+<li><a href="gpa.html">GPA Calculator</a></li>   
+</ul>
+         
+</nav>
+
+</header>
+
+    
+    
+    <h1>Teaching Assistant Application</h1>
+<form name="myform" action="survey_data.html" method = "GET">
+
+   
+    <label for="fullname">Full Name:</label> <!--Name Field-->
+    <input type="text" name="Full Name" id="fullname" autofocus><br>
+    <input type="text"  pattern ="[a-zA-Z0-9-]+" name="id" required> <!--Student ID Field-->
+    <label for="id">ID</label><br>
+    <input type="radio" id="male" name="gender" value="male"> <!--Gender Field-->
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name = "gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="number" step="0.01" name="gpa" value="gpa" class="form-control"  /> <!--GPA-->
+    <label for="gpa">GPA</label><br>
+    <label for="date">Submission Date</label><br>
+    <input type="date" name="date" id="date"><br>
+    <label for="comments">Comments</label>
+    <textarea id="comments" name="comments"></textarea>
+    
+    
+    
+    <h2>Thank you for applying!</h2>
+   <input type="submit" name="Submit" id="button">
+    <input type="reset" name="reset" id="reset">
+</form>
+    
+    
+    
+    
+    
+    
+    
+    
+   <footer>
+<p><b>Designer:</b> Justin Davis</p>
+<p><b>Contact:</b>jdavi144@aum.edu</p>
+
+
+
+</footer>
+    
+    </body>    
+
+
+</html>
